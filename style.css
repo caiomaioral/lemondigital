@@ -127,41 +127,99 @@ h2{
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 322px;
-	
-	/*
-	position: absolute;
-	z-index: 900;
-	top: 520px;*/
 }
 
-/*#second {
-	background: url(images/pontos.gif) 50% 0 repeat fixed;
-	color: white;
-	height: 650px;
-	margin: 0 auto;
-	padding: 0;
-	overflow: hidden;
-}
-
-#second .bg_second {
-	background: url(images/limoes.png) 100% 0 no-repeat fixed;
-	background-position: bottom;
-	width: 100%;
-	height: 635px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	z-index: 0;
-	top: 520px;
-}*/
-
-#third{
+#third {
 	background: url(images/tela_verde.png) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1000px;
 	padding: 100px 0 0 0;
+}
+
+#third .contents {
+	display: table;
+}
+
+#third .contents .contents_right {
+	margin: 0 auto;
+	width: 800px;
 	
 	border: 0px #000 dashed;	
+}
+
+#third .contents .contents_right ol li h3
+{
+	font: 25px/20px "newjuneboldregular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #676665;
+}
+
+#third .contents .contents_right ol li p
+{
+	font: 16px/18px "newjuneboldregular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #676665;
+}
+
+#third .contents .contents_right ol li
+{
+	text-align: left;
+	padding-left: 80px;
+}
+
+#third .contents .contents_right ol.a
+{
+	background: url('images/icon_web.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents .contents_right ol.a h3
+{
+	color: #c6c91e;
+}
+
+#third .contents .contents_right ol.b
+{
+	background: url('images/icon_redes_sociais.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents .contents_right ol.c
+{
+	background: url('images/icon_midia.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents .contents_right ol.d
+{
+	background: url('images/icon_mobile.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents .contents_right ol.e
+{
+	background: url('images/icon_sistemas.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents .contents_right ol.f
+{
+	background: url('images/icon_comunicacao.png') no-repeat left;
+	height: 90px;	
+	list-style: none;
+}
+
+#third .contents h3 {
+	font: 32px/35px "newjuneboldregular", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #676665;		
+}
+
+#third .contents p {
+	font: 18px/20px "newjuneboldregular", "Trebuchet MS", Arial, Helvetica, sans-serif;		
+	color: #676665;
 }
 
 #divisoria {
