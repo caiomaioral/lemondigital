@@ -10,9 +10,9 @@
 
 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
-	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
+	
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/scripts/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/scripts/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/scripts/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/scripts/jquery.localscroll-1.2.7-min.js"></script>

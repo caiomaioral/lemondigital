@@ -140,7 +140,13 @@
             
             <div class="formulario">
 
-				<form id="FormX" name="FormX" method="post" action="">
+				<?php 
+                    
+                    $attributes = array('id' => 'FormX', 'name' => 'FormX');
+                
+                    echo form_open(base_url() . 'home/enviar', $attributes); 
+                    
+                ?>
                 <fieldset>
                     
                     <label for="Nome">nome*</label>
@@ -170,7 +176,7 @@
                     </div>
                     
                 </fieldset>
-                </form>
+                <?php echo form_close(); ?>
                 
             </div>
 		</div>

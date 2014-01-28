@@ -13,4 +13,9 @@ class Home extends MY_Controller {
     {
 		$this->usable('home');
     }
+	
+	public function enviar()
+	{
+		
+	}
 }

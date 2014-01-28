@@ -90,27 +90,21 @@ $(document).ready(function(){
 $("#FormX").bind("submit", function(){
 	
 	var params  =  $("#FormX").serialize();
+	var ctoken  =  $("input[name=ci_csrf_token]").val();
 
-	alert('Mensagem enviada com sucesso.');
-	
 	// Se rolou sucesso no cadastro
-	
 	$.ajax({
 		type	 :  "POST",
 		cache	 :  false,
 		url		 :  "http://localhost/GitHub/lemondigital/home/enviar",
-		data	 :  { params : params },
+		data	 :  { params : params, ci_csrf_token: ctoken },
 		error    :  function(data) 
 		{
-			alert('Problemas com servidor, favor envie novamente.');
+			alert('Problemas com servidor, favor se cadastre novamente.');
 		},
 		success  :  function(data) 
 		{
-			alert('Mensagem enviada com sucesso.');
-			
-			$('html, body').animate({ scrollTop: $('#doacoes').offset().top }, 1);
-			$('#displayDoacoes2').show('fast');
-			$('#displayDoacoes1').hide('fast');			
+
 		}
 	});
 		
