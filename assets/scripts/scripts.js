@@ -43,6 +43,21 @@ maps = function(){
 
 };
 
+function dominio_base()
+{
+    url_site     =  document.location.href
+    url_pos      =  url_site.indexOf('//');
+    url_limpar   =  url_site.substr(url_pos + 2);
+    url_prot     =  url_site.substr(0, url_pos + 2);
+    url_split 	 =  url_limpar.split('/');  
+
+	//url_base 	 =  url_prot + url_split[0] + '/' + url_split[1] + '/' + url_split[2];
+
+	url_base 	 =  url_prot + url_split[0] + '/' + url_split[1] + '/' + url_split[2] + '/';
+	
+	return url_base.replace('undefined\/', '');		
+}
+
 $(document).ready(maps);
 
 $(document).ready(function(){
@@ -82,31 +97,33 @@ $(document).ready(function(){
 			element.mask("(99) 9999-9999?9");
 		}
 	}).trigger('focusout');
-})
 
-/*
- *  Formulario de Falecom
- */
-$("#FormX").bind("submit", function(){
-	
-	var params  =  $("#FormX").serialize();
-	var ctoken  =  $("input[name=ci_csrf_token]").val();
-
-	// Se rolou sucesso no cadastro
-	$.ajax({
-		type	 :  "POST",
-		cache	 :  false,
-		url		 :  "http://localhost/GitHub/lemondigital/home/enviar",
-		data	 :  { params : params, ci_csrf_token: ctoken },
-		error    :  function(data) 
-		{
-			alert('Problemas com servidor, favor se cadastre novamente.');
-		},
-		success  :  function(data) 
-		{
-
-		}
-	});
+	/*
+	 *  Formulario de Falecom
+	 */
+	$("#FormX").bind("submit", function(){
 		
-	return false;
-});
+		var params  =  $("#FormX").serialize();
+		var ctoken  =  $("input[name=ci_csrf_token]").val();
+		
+		// Se rolou sucesso no cadastro
+		$.ajax({
+			type	 :  "POST",
+			cache	 :  false,
+			url		 :  dominio_base() + "home/enviar",
+			data	 :  params,
+			error    :  function(data) 
+			{
+				alert('Problemas com servidor, favor se cadastre novamente.');
+			},
+			success  :  function(data) 
+			{
+				$('#FormX').each (function(){
+					this.reset();
+				});
+			}
+		});
+			
+		return false;
+	});
+})
