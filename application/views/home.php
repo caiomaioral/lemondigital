@@ -61,7 +61,23 @@
         	
         <div id="accordion">
         
-            <div class="cases"><a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/images/moldura_cases.png" width="881" height="97" border="0"></a></div>
+            <!--
+            
+				PRIMEIRO CASE
+                            
+            -->
+            <div class="cases">
+
+                <ol>
+                    <li># web</li>
+                    <li># redes sociais</li>
+                    <li># comunicação visual</li>
+                    <li class="selected">Kaballah Circus Festival 2012</li>
+                </ol>            
+
+            	<a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/images/moldura_cases.png" width="881" height="97" border="0"></a>
+            
+            </div>
             <div class="block">
                 <div class="content">
                     <div class="infos">
@@ -85,8 +101,24 @@
                     <img src="<?php echo base_url(); ?>assets/upload/kaballah2.jpg" width="800" height="564">
                 </div>
             </div>
-                    
-            <div class="cases"><a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/images/moldura_cases.png" width="881" height="97" border="0"></a></div>
+                     
+            <!--
+            
+				SEGUNDO CASE
+                            
+            -->
+            <div class="cases">
+
+                <ol>
+                    <li># web</li>
+                    <li># redes sociais</li>
+                    <li># comunicação visual</li>
+                    <li class="selected">Kaballah Circus Festival 2012</li>
+                </ol>            
+
+            	<a href="javascript:void(0)"><img src="<?php echo base_url(); ?>assets/images/moldura_cases.png" width="881" height="97" border="0"></a>
+            
+            </div>
             <div class="block">
                 <div class="content">
                     <div class="infos">
